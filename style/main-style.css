@@ -1,0 +1,175 @@
+header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, hsl(240, 59%, 72%), hsl(60, 82%, 65%),
+            hsl(327, 86%, 73%), hsl(180, 55%, 55%),
+            hsl(303, 69%, 73%), hsl(192, 79%, 70%), hsl(196, 74%, 63%));
+    background-size: 400% 400%;
+    animation: anim 30s infinite linear;
+    position: relative;
+}
+
+@keyframes anim {
+    0% {
+        background-position: 0% 55%;
+    }
+
+    15% {
+        background-position: 0% 25%;
+    }
+
+    25% {
+        background-position: 0% 50%;
+    }
+
+    35% {
+        background-position: 0% 75%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    65% {
+        background-position: 0% 0%;
+    }
+
+    75% {
+        background-position: 0% 25%;
+    }
+
+    85% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 0% 75%;
+    }
+}
+
+header {
+    background-color: rgb(47, 46, 46);
+    color: white;
+    margin-bottom: 2px;
+    text-decoration: 2px black dashed;
+    text-align: center;
+
+}
+
+nav {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 15px;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.btn {
+    margin-right: 15px;
+}
+
+footer {
+    margin-bottom: 0px;
+    margin: 15px -7px;
+    background-color: rgb(47, 46, 46);
+    color: white;
+    display: flex;
+
+}
+
+footer>p {
+    color: white;
+    margin-left: 450px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover !important;
+        background-position: center !important;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 90% !important;
+        margin: auto !important;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90% !important;
+        margin: auto !important;
+        text-align: center;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    footer p {
+        margin: 0 auto !important;
+        font-size: 14px;
+        width: 100%;
+        text-align: center !important;
+    }
+}
